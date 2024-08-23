@@ -6,7 +6,8 @@ export const renderTasks = () => {
 
 const taskList = document.getElementById("task-list");
  taskList.innerHTML = " ";
- const tasks = getTasks ();
+ const tasks = getTasks();
+ console.log(tasks)
  tasks.forEach((task) => {
   const li = document.createElement("li")
   li.setAttribute("data-id", task.id);
@@ -22,6 +23,6 @@ const taskList = document.getElementById("task-list");
         <button class="delete"> Eliminar </button>
         <button class="toggle"> ${ task.completed === true ? "Deshacer" : "Completar" } </button>
     `;
-    taskList.appendChuld(li);
+    taskList.appendChild(li);
  });
 };

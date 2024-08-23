@@ -1,10 +1,10 @@
 
 let tasks = JSON.parse(localStorage.getItem(tasks))|| [];
 // agregar una tarea
-export const addTask = (Task) =>{
+export const addTask = (task) =>{
  const newTask = {
    id: Date.now(),
-   text: tasks,
+   text: task,
    completed: false,
  };
  tasks.push(newTask);
@@ -19,7 +19,7 @@ export const deleteTask = (id) => {
 
 // actualizar la tarea
 export const toggleTask = (id) => {
-    tasks = tasks.map =((task) => {
+    tasks = tasks.map((task) => {
          if(task.id === parseInt(id)) {
             task.completed = !task.completed;
          }

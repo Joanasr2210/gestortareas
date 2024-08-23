@@ -1,6 +1,7 @@
-const path = ('path');
+const path = require('path');
 
 module.exports = {
+    mode: 'development',
     entry: './src/index.js',
     output: {
         filename: 'bundle.js',
@@ -10,7 +11,7 @@ module.exports = {
         rules: [
             {
                 test: /\.css$/,
-                use ['style-loader', 'css-loader'],
+                use:['style-loader', 'css-loader'],
             },
             {
                 test: /\.js$/, 
@@ -18,7 +19,7 @@ module.exports = {
                 use: {
                     loader: 'babel-loader',
                     options:{
-                        presets ['@babel/preset-env'],
+                        presets:['@babel/preset-env'],
                     },
                 },
             },
@@ -26,7 +27,9 @@ module.exports = {
     },
     devtool: 'source-map',
     devServer: {
-        contentBase: path.resolve(__dirname, 'dist'),
+        static:{
+            directory: path.resolve(__dirname, 'dist'),
+        },
         compress: true,
         port: 9000,
     },
