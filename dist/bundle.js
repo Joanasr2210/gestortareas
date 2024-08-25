@@ -100,25 +100,34 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/getUrl.js */ "./node_modules/css-loader/dist/runtime/getUrl.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__);
 // Imports
 
 
+
+var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ Object(function webpackMissingModule() { var e = new Error("Cannot find module 'imagenes/fondo.jpg'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()), __webpack_require__.b);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+___CSS_LOADER_EXPORT___.push([module.id, "@import url(https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Merienda:wght@300..900&display=swap);"]);
+var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, `
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #f4f4f4;
+___CSS_LOADER_EXPORT___.push([module.id, `body {
+    background-image: url(${___CSS_LOADER_URL_REPLACEMENT_0___});
+    background-color: thistle;
+    background: -moz-repeating-linear-gradient();
+    font-family: "Merienda", cursive;
+    font-size: 400;
     margin: 0;
     padding: 0;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 #app {
-    background-color: white;
+    background-color: #f2b5d4;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -133,13 +142,13 @@ input {
     width: 75%;
     padding: 8px;
     margin-right: 10px;
-    border: 1px solid #ddd;
+    border: 1px solid #f2b5d4;
     border-radius: 3px;
 }
 
 button {
     padding: 5px 8px;
-    background-color: #007bff;
+    background-color: #f72585;
     color: white;
     border: none;
     border-radius: 3px;
@@ -152,7 +161,7 @@ ul {
 }
 
 li {
-    background-color: #f4f4f4;
+    background-color: #f2b5d4;
     padding: 10px;
     border: 1px solid #ddd;
     margin-top: 10px;
@@ -166,7 +175,7 @@ li.completed {
     color: #888;
     
 }
-`, "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":";AACA;IACI,yCAAyC;IACzC,yBAAyB;IACzB,SAAS;IACT,UAAU;IACV,aAAa;IACb,aAAa;IACb,uBAAuB;IACvB,mBAAmB;AACvB;;AAEA;IACI,uBAAuB;IACvB,aAAa;IACb,kBAAkB;IAClB,oCAAoC;AACxC;;AAEA;IACI,aAAa;IACb,8BAA8B;AAClC;;AAEA;IACI,UAAU;IACV,YAAY;IACZ,kBAAkB;IAClB,sBAAsB;IACtB,kBAAkB;AACtB;;AAEA;IACI,gBAAgB;IAChB,yBAAyB;IACzB,YAAY;IACZ,YAAY;IACZ,kBAAkB;IAClB,eAAe;AACnB;;AAEA;IACI,gBAAgB;IAChB,UAAU;AACd;;AAEA;IACI,yBAAyB;IACzB,aAAa;IACb,sBAAsB;IACtB,gBAAgB;IAChB,aAAa;IACb,mBAAmB;IACnB,8BAA8B;AAClC;;AAEA;IACI,6BAA6B;IAC7B,WAAW;;AAEf","sourcesContent":["\nbody {\n    font-family: Arial, Helvetica, sans-serif;\n    background-color: #f4f4f4;\n    margin: 0;\n    padding: 0;\n    height: 100vh;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n}\n\n#app {\n    background-color: white;\n    padding: 20px;\n    border-radius: 5px;\n    box-shadow: 0 0 10px rgba(0,0,0,0.1);\n}\n\nform{\n    display: flex;\n    justify-content: space-between;\n}\n\ninput {\n    width: 75%;\n    padding: 8px;\n    margin-right: 10px;\n    border: 1px solid #ddd;\n    border-radius: 3px;\n}\n\nbutton {\n    padding: 5px 8px;\n    background-color: #007bff;\n    color: white;\n    border: none;\n    border-radius: 3px;\n    cursor: pointer;\n}\n\nul {\n    list-style: none;\n    padding: 0;\n}\n\nli {\n    background-color: #f4f4f4;\n    padding: 10px;\n    border: 1px solid #ddd;\n    margin-top: 10px;\n    display: flex;\n    align-items: center;\n    justify-content: space-between;\n}\n\nli.completed {\n    text-decoration: line-through;\n    color: #888;\n    \n}\n"],"sourceRoot":""}]);
+`, "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AACA;IACI,yDAA2C;IAC3C,yBAAyB;IACzB,4CAA4C;IAC5C,gCAAgC;IAChC,cAAc;IACd,SAAS;IACT,UAAU;IACV,aAAa;IACb,aAAa;IACb,uBAAuB;IACvB,mBAAmB;;AAEvB;;AAEA;IACI,yBAAyB;IACzB,aAAa;IACb,kBAAkB;IAClB,oCAAoC;AACxC;;AAEA;IACI,aAAa;IACb,8BAA8B;AAClC;;AAEA;IACI,UAAU;IACV,YAAY;IACZ,kBAAkB;IAClB,yBAAyB;IACzB,kBAAkB;AACtB;;AAEA;IACI,gBAAgB;IAChB,yBAAyB;IACzB,YAAY;IACZ,YAAY;IACZ,kBAAkB;IAClB,eAAe;AACnB;;AAEA;IACI,gBAAgB;IAChB,UAAU;AACd;;AAEA;IACI,yBAAyB;IACzB,aAAa;IACb,sBAAsB;IACtB,gBAAgB;IAChB,aAAa;IACb,mBAAmB;IACnB,8BAA8B;AAClC;;AAEA;IACI,6BAA6B;IAC7B,WAAW;;AAEf","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Merienda:wght@300..900&display=swap');\nbody {\n    background-image: url(\"imagenes/fondo.jpg\");\n    background-color: thistle;\n    background: -moz-repeating-linear-gradient();\n    font-family: \"Merienda\", cursive;\n    font-size: 400;\n    margin: 0;\n    padding: 0;\n    height: 100vh;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    \n}\n\n#app {\n    background-color: #f2b5d4;\n    padding: 20px;\n    border-radius: 5px;\n    box-shadow: 0 0 10px rgba(0,0,0,0.1);\n}\n\nform{\n    display: flex;\n    justify-content: space-between;\n}\n\ninput {\n    width: 75%;\n    padding: 8px;\n    margin-right: 10px;\n    border: 1px solid #f2b5d4;\n    border-radius: 3px;\n}\n\nbutton {\n    padding: 5px 8px;\n    background-color: #f72585;\n    color: white;\n    border: none;\n    border-radius: 3px;\n    cursor: pointer;\n}\n\nul {\n    list-style: none;\n    padding: 0;\n}\n\nli {\n    background-color: #f2b5d4;\n    padding: 10px;\n    border: 1px solid #ddd;\n    margin-top: 10px;\n    display: flex;\n    align-items: center;\n    justify-content: space-between;\n}\n\nli.completed {\n    text-decoration: line-through;\n    color: #888;\n    \n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -263,6 +272,41 @@ module.exports = function (cssWithMappingToString) {
     }
   };
   return list;
+};
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/runtime/getUrl.js":
+/*!********************************************************!*\
+  !*** ./node_modules/css-loader/dist/runtime/getUrl.js ***!
+  \********************************************************/
+/***/ ((module) => {
+
+
+
+module.exports = function (url, options) {
+  if (!options) {
+    options = {};
+  }
+  if (!url) {
+    return url;
+  }
+  url = String(url.__esModule ? url.default : url);
+
+  // If url is already wrapped in quotes, remove them
+  if (/^['"].*['"]$/.test(url)) {
+    url = url.slice(1, -1);
+  }
+  if (options.hash) {
+    url += options.hash;
+  }
+
+  // Should url be wrapped?
+  // See https://drafts.csswg.org/css-values-3/#urls
+  if (/["'() \t\n]|(%20)/.test(url) || options.needQuotes) {
+    return "\"".concat(url.replace(/"/g, '\\"').replace(/\n/g, "\\n"), "\"");
+  }
+  return url;
 };
 
 /***/ }),
@@ -637,6 +681,9 @@ module.exports = styleTagTransform;
 /******/ 		return module.exports;
 /******/ 	}
 /******/ 	
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = __webpack_modules__;
+/******/ 	
 /************************************************************************/
 /******/ 	/* webpack/runtime/compat get default export */
 /******/ 	(() => {
@@ -676,6 +723,32 @@ module.exports = styleTagTransform;
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/jsonp chunk loading */
+/******/ 	(() => {
+/******/ 		__webpack_require__.b = document.baseURI || self.location.href;
+/******/ 		
+/******/ 		// object to store loaded and loading chunks
+/******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
+/******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
+/******/ 		var installedChunks = {
+/******/ 			"main": 0
+/******/ 		};
+/******/ 		
+/******/ 		// no chunk on demand loading
+/******/ 		
+/******/ 		// no prefetching
+/******/ 		
+/******/ 		// no preloaded
+/******/ 		
+/******/ 		// no HMR
+/******/ 		
+/******/ 		// no HMR manifest
+/******/ 		
+/******/ 		// no on chunks loaded
+/******/ 		
+/******/ 		// no jsonp function
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/nonce */
